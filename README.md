@@ -1,2 +1,7 @@
 # chatAPP
-Nods JS
+NodsJs
+ReactJs
+Express
+Passport
+Socketio
+MySQL
