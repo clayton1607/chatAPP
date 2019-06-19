@@ -6,9 +6,9 @@ class dashboard extends Component {
     render(){
         return(
             <div>
-                <Route path="/" component={Login} />
-                <Route path="/login" component={Login} />
-                <Route path="/signup" component={Signup} />
+                <Route path="/" exact component={Login} />
+                <Route path="/login" exact component={Login} />
+                <Route path="/signup" exact component={Signup} />
             </div>
         );
     }

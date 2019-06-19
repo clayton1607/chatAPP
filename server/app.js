@@ -19,7 +19,7 @@ app.use(cors())
 //bodyparser middleware
 app.use(bodyParser.json());
 app.use('/',index);
-
+        
 const port = 5000;
 app.listen(port, () => {
     console.log("Running on Port: " + port);

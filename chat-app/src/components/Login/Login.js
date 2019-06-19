@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 class login extends Component {
 	state = {
 		username:'abc',
@@ -35,12 +37,15 @@ class login extends Component {
 						<tr>
 							<td>Password:</td>
 							<td><input type="Password" size={25} name="pwd" onChange = {(event) => this.setState({password:event.target.value})}/></td>
-							</tr>
+						</tr>
 		
-							<tr>
+						<tr>
 								<td ><input type="Reset"/></td>
-									<td><input type="submit" onClick={this.logindataHandler} value="Login"/></td>
-							</tr>
+								<td><input type="submit" onClick={this.logindataHandler} value="Login"/></td>
+								<td><Link to={{
+									pathname: '/signup'
+								}}><input type="submit" value="New? Signup"/></Link></td>
+						</tr>
 		
 							</table>
 					</div>

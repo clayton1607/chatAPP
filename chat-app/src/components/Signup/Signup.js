@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 class Signup extends Component {
 	state = {
 		username:'abc',
@@ -41,6 +42,9 @@ class Signup extends Component {
 								<td ><input type="Reset"/></td>
 									<td><input type="submit" onClick={this.logindataHandler} value="Sign up"/></td>
 							</tr>
+                            <td><Link to={{
+									pathname: '/login'
+								}}><input type="submit" value="Login"/></Link></td>
 		
 							</table>
 					</div>
