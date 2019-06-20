@@ -10,7 +10,9 @@
 // export default OutMssg;
 
 import React,{ Component } from 'react';
-
+import '../../Dashboard.css'
+import '../../../dash1.css'
+import '../../../dash2.css' 
 class OutMssg extends Component{
     render(){
         return(

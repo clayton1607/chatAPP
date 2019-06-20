@@ -1,6 +1,8 @@
 import React,{ Component } from 'react';
-
-class OutMssg extends Component{
+import '../../Dashboard.css'
+import '../../../dash1.css'
+import '../../../dash2.css'
+class TypeMssg extends Component{
     render(){
         return(
             <div className="type_msg">
@@ -12,4 +14,4 @@ class OutMssg extends Component{
         )
     }
 };
-export default OutMssg;
+export default TypeMssg;

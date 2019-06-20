@@ -12,9 +12,9 @@ class Signup extends Component {
 			password:this.state.password
 		}
 		console.log(this.state)
-		axios.post('',data).then(
+		axios.post('http://localhost:5000/signup',data).then(
 			response=>{
-				console.log(response);
+				console.log(response);	
 			}
 		);
 	}

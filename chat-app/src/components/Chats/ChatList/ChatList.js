@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import '../../Dashboard.css'
+import '../../../dash1.css'
+import '../../../dash2.css'
 class ChatList extends Component {
     render() {
         return (
