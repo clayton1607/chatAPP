@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 var cors = require('cors')
 var index=require('./routes/index');
+var dashboard= require('./routes/dashboard');
 app.use(cors())
 //set the express.static middleware
 
@@ -19,7 +20,7 @@ app.use(cors())
 //bodyparser middleware
 app.use(bodyParser.json());
 app.use('/',index);
-        
+app.use('/',dashboard);        
 const port = 5000;
 app.listen(port, () => {
     console.log("Running on Port: " + port);

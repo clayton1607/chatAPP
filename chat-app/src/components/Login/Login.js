@@ -41,7 +41,9 @@ class login extends Component {
 		
 						<tr>
 								<td ><input type="Reset"/></td>
-								<td><input type="submit" onClick={this.logindataHandler} value="Login"/></td>
+								<td><Link to={{
+									pathname:'/dashboard'
+								}}><input type="submit" onClick={this.logindataHandler} value="Login"/></Link></td>
 								<td><Link to={{
 									pathname: '/signup'
 								}}><input type="submit" value="New? Signup"/></Link></td>
